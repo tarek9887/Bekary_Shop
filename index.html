@@ -10,34 +10,108 @@
       <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap" rel="stylesheet">
       <link rel="stylesheet" href="style.css">
 </head>
-<body>
-      <div id="nav" class="flex flex-row mx-24 mt-4 justify-between items-center justify-center text-[19px]">
+<body class="bg-black text-white">
+      <div id="nav" class="flex flex-row mx-24 p-4 sticky top-0 z-50 shadow-2xl justify-between items-center justify-center text-[19px]">
             <div>
-                  <h4 class="hover:underline">Bakery</h4>
+                  <h4 class="cursor-pointer text-orange-500 transform transition duration-300 hover:scale-105 hover:underline hover:text-orange-500">Bakery</h4>
             </div>
             <div class="">
                   <li class="flex flex-row justify-between gap-14">
-                        <i class="hover:underline hover:text-orange-500">Home</i>
-                        <i class="hover:underline hover:text-orange-500">News</i>
-                        <i class="hover:underline hover:text-orange-500">About Us</i>
-                        <i class="hover:underline hover:text-orange-500">Favorites</i>
-                        <i class="hover:underline hover:text-orange-500">Location</i>
+                        <i class="cursor-pointer text-orange-500 transform transition duration-300 hover:scale-105 hover:underline hover:text-orange-500">Home</i>
+                        <i class="cursor-pointer transform transition duration-300 hover:scale-105 hover:underline hover:text-orange-500">News</i>
+                        <i class="cursor-pointer transform transition duration-300 hover:scale-105 hover:underline hover:text-orange-500">About Us</i>
+                        <i class="cursor-pointer transform transition duration-300 hover:scale-105 hover:underline hover:text-orange-500">Favorites</i>
+                        <i class="cursor-pointer transform transition duration-300 hover:scale-105 hover:underline hover:text-orange-500">Location</i>
                   </li>
             </div>
       </div>
 
 
+      <!-- Hero Section -->
 
-      <div id="hero" class="flex bg-[url('img/home-bg.jpg')] flex-wrap mt-4 bg-pink-100 justify-center md:justify-around items-center">
-            <div class="text-center mt-10  md:text-left">
-                <h1 class="text-6xl text-white md:text-6xl mb-7 font-bold">Select The Best <br> Quality Breads</span></h1>
-                <button class="mt-4 font-semibold rounded-xl text-lg md:text-lg p-2.5 text-center cursor-pointer text-white bg-[rgb(231,111,81)] cursor-pointer w-36 md:w-36 hover:w-40 shadow-2xl hover:bg-[rgb(221,121,71)]">Select Breads</button>
+      <div id="hero" class="flex bg-[url('img/home-bg.jpg')] shadow-2xl flex-wrap bg-pink-100 justify-center gap-40 items-center">
+            <div class="text-center  md:text-left">
+                <h1 class="text-6xl text-white md:text-6xl shadow-2xl mb-7 font-semibold">Select The Best <br class="mb-2"> Quality Breads</span></h1>
+                <button class="mt-4 font-semibold rounded-xl text-black shadow-2xl text-lg md:text-lg p-2.5 text-center cursor-pointer bg-orange-700 cursor-pointer w-36 md:w-36 hover:w-40 shadow-2xl hover:bg-orange-500">Select Breads</button>
 
             </div>
-            <div class="mt-6 mb-8 md:mt-10 w-[500px]">
-                <img class="w-full max-w-xs md:max-w-[450px]" src="img/home-bread.png" alt="">
+            <div class="mt-6 mb-8 md:mt-10">
+                <img class="w-full max-w-xs md:max-w-[500px] transform transition duration-300 hover:scale-105" src="img/home-bread.png" alt="">
             </div>
       </div>
+
+
+       <!-- about Section -->
+
+      <div id="about" class="flex flex-wrap mt-6 mx-14 w-11/12 justify-center md:justify-around items-center p-3 md:p-20">
+            <div class="md:mt-0">
+                <img class="w-full transform transition duration-300 hover:scale-105 max-w-xs md:max-w-[360px]" src="img/about-bread.png" alt="">
+            </div>
+
+            <div class="text-center md:text-left">
+                <h1 class="text-3xl md:text-5xl  mt-4 font-semibold">About Us</h1>
+                <p class="mt-8 mb-7 text-[16px] w-[450px] ">We prepare all types of bread that are made at home, maintaining the tradition of using only the best ingredients made with local products whenever possible. We have an extensive line of freshly prepared bakeryand coffee products.</p>
+                <button class="mt-4 font-semibold rounded-xl text-lg md:text-lg p-2.5 text-center cursor-pointer text-black bg-orange-700 w-28 md:w-36 hover:w-32 shadow-2xl hover:bg-orange-500">Order now</button>
+            </div>
+      </div>
+
+
+       <!-- Pizzas ordering part PART 01 -->
+
+      <div id="oder01" class="mt-20">
+            <h2 class="text-4xl text-center text-white font-bold">Customer <span class="text-orange-700">Favorites</span></h2>
+      </div>
+
+
+       <div id="oder03" class="flex flex-row justify-center items-center gap-3">
+            <div class="flex h-[500px] w-[380px] hover:w-[390px] p-2 shadow-2xl flex-col justify-center gap-3 items-center">
+                  <img class="shadow-2xl transform transition duration-300 hover:scale-105 rounded-full h-64" src="img/favorite-bread-1.png" alt="">
+                  <h2 class="text-white text-2xl font-bold">Whole Grain Bread</h2>
+                  <div class="text-2xl font-bold text-[rgb(231,111,81)] mb-2">$14.99</div>
+                  <button class="font-semibold rounded-xl text-lg md:text-lg p-2.5 text-center cursor-pointer text-black bg-orange-700 w-28 md:w-36 hover:w-32 shadow-2xl hover:bg-orange-500">Order now</button>
+            </div>
+            <div class="flex h-[500px] w-[380px] hover:w-[390px] p-2 shadow-2xl flex-col justify-center gap-3 items-center">
+                  <img class="shadow-2xl transform transition duration-300 hover:scale-105 rounded-full h-64" src="img/favorite-bread-2.png" alt="">
+                  <h2 class="text-white text-2xl font-bold">Rye Bread</h2>
+                  <div class="text-2xl font-bold text-[rgb(231,111,81)] mb-2">$15.99</div>
+                  <button class="font-semibold rounded-xl text-lg md:text-lg p-2.5 text-center cursor-pointer text-black bg-orange-700 w-28 md:w-36 hover:w-32 shadow-2xl hover:bg-orange-500">Order now</button>
+            </div>
+            <div class="flex h-[500px] w-[380px] hover:w-[390px] p-2 shadow-2xl flex-col justify-center gap-3 items-center">
+                  <img class="shadow-2xl transform transition duration-300 hover:scale-105 rounded-full h-64" src="img/favorite-bread-3.png" alt="">
+                  <h2 class="text-white text-2xl font-bold">Wheat Bread</h2>
+                  <div class="text-2xl font-bold text-[rgb(231,111,81)] mb-2">$16.99</div>
+                  <button class="font-semibold rounded-xl text-lg md:text-lg p-2.5 text-center cursor-pointer text-black bg-orange-700 w-28 md:w-36 hover:w-32 shadow-2xl hover:bg-orange-500">Order now</button>
+            </div>
+      </div>
+
+
+      <!-- Pizzas ordering part PART 02 -->
+
+      <div id="oder02" class="flex flex-row justify-center items-center gap-3">
+            <div class="flex h-[450px] w-[380px]  p-2 shadow-2xl flex-col justify-center gap-3 items-center">
+                  <img class="shadow-2xl transform transition duration-300 hover:scale-105 rounded-full h-64" src="img/favorite-bread-4.png" alt="">
+                  <h2 class="text-white text-2xl font-bold">Multigrain Bread</h2>
+                  <div class="text-2xl font-bold text-[rgb(231,111,81)] mb-2">$14.99</div>
+                  <button class="font-semibold rounded-xl text-lg md:text-lg p-2.5 text-center cursor-pointer text-black bg-orange-700 w-28 md:w-36 hover:w-32 shadow-2xl hover:bg-orange-500">Order now</button>
+            </div>
+            <div class="flex h-[450px] w-[380px] p-2 shadow-2xl flex-col justify-center gap-3 items-center">
+                  <img class="shadow-2xl transform transition duration-300 hover:scale-105 rounded-full h-64" src="img/favorite-bread-5.png" alt="">
+                  <h2 class="text-white text-2xl font-bold">Sourdough Bread</h2>
+                  <div class="text-2xl font-bold text-[rgb(231,111,81)] mb-2">$15.99</div>
+                  <button class="font-semibold rounded-xl text-lg md:text-lg p-2.5 text-center cursor-pointer text-black bg-orange-700 w-28 md:w-36 hover:w-32 shadow-2xl hover:bg-orange-500">Order now</button>
+            </div>
+            <div class="flex h-[450px] w-[380px] p-2 shadow-2xl flex-col justify-center gap-3 items-center">
+                  <img class="shadow-2xl transform transition duration-300 hover:scale-105 rounded-full h-64" src="img/favorite-bread-6.png" alt="">
+                  <h2 class="text-white text-2xl font-bold">French Bread</h2>
+                  <div class="text-2xl font-bold text-[rgb(231,111,81)] mb-2">$16.99</div>
+                  <button class="font-semibold rounded-xl text-lg md:text-lg p-2.5 text-center cursor-pointer text-black bg-orange-700 w-28 md:w-36 hover:w-32 shadow-2xl hover:bg-orange-500">Order now</button>
+            </div>
+      </div>
+
+
+
+
+
 
 </body>
 </html>
