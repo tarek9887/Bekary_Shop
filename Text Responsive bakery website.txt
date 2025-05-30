@@ -67,24 +67,19 @@ Whole Grain
 Bread
 $6.00
 
-Rye
-Bread
-$8.00
+Rye Bread
+ $8.00
 
-Wheat
-Bread
+Wheat Bread
 $3.00
 
-Multigrain
-Bread
+Multigrain Bread
 $5.00
 
-Sourdough
-Bread
+Sourdough Bread
 $7.00
 
-French
-Bread
+French Bread
 $3.00
 
 
@@ -93,8 +88,7 @@ $3.00
 Visit Us
 
 .visit__description
-Discover the best bread, we look forward 
-to your visit.
+Discover the best bread, we look forward to your visit.
 
 .button
 See Location

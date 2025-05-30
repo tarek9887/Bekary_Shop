@@ -11,7 +11,6 @@
   font-style: normal;
 }
 
-
 #about{
   font-family: "Merienda", cursive;
   font-weight: bold;
@@ -30,6 +29,12 @@
 }
 #oder03{
    font-family: "Merienda", cursive;
+  font-weight: bold;
+  font-style: normal;
+}
+
+#Visit{
+  font-family: "Merienda", cursive;
   font-weight: bold;
   font-style: normal;
 }
