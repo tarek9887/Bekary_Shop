@@ -11,141 +11,136 @@
       <link rel="stylesheet" href="style.css">
 </head>
 <body class="bg-black text-white">
-      <div id="nav" class="flex flex-row bg-black mx-24 p-4 sticky top-0 z-50 shadow-2xl justify-between items-center justify-center text-[19px]">
-            <div>
+      <div id="nav" class="flex flex-col md:flex-row bg-black px-4 md:mx-24 p-4 sticky top-0 z-50 shadow-2xl md:justify-between items-center text-[19px]">
+            <div class="w-full md:w-auto flex justify-between items-center">
                   <h4 class="cursor-pointer text-orange-500 transform transition duration-300 hover:scale-105 hover:underline hover:text-orange-500">Bakery</h4>
+                  <button class="md:hidden text-white" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                  </button>
             </div>
-            <div class="">
-                  <li class="flex flex-row justify-between gap-14">
-                        <i class="cursor-pointer transform transition duration-300 hover:scale-105 hover:underline hover:text-orange-500">Home</i>
-                        <i class="cursor-pointer transform transition duration-300 hover:scale-105 hover:underline hover:text-orange-500">News</i>
-                        <i class="cursor-pointer transform transition duration-300 hover:scale-105 hover:underline hover:text-orange-500">About Us</i>
-                        <i class="cursor-pointer transform transition duration-300 hover:scale-105 hover:underline hover:text-orange-500">Favorites</i>
-                        <i class="cursor-pointer transform transition duration-300 hover:scale-105 hover:underline hover:text-orange-500">Location</i>
-                  </li>
+            <div id="mobile-menu" class="hidden w-full md:flex md:w-auto">
+                  <ul class="flex flex-col md:flex-row md:gap-14 w-full text-center">
+                        <li class="py-2 md:py-0"><i class="cursor-pointer transform transition duration-300 hover:scale-105 hover:underline hover:text-orange-500">Home</i></li>
+                        <li class="py-2 md:py-0"><i class="cursor-pointer transform transition duration-300 hover:scale-105 hover:underline hover:text-orange-500">News</i></li>
+                        <li class="py-2 md:py-0"><i class="cursor-pointer transform transition duration-300 hover:scale-105 hover:underline hover:text-orange-500">About Us</i></li>
+                        <li class="py-2 md:py-0"><i class="cursor-pointer transform transition duration-300 hover:scale-105 hover:underline hover:text-orange-500">Favorites</i></li>
+                        <li class="py-2 md:py-0"><i class="cursor-pointer transform transition duration-300 hover:scale-105 hover:underline hover:text-orange-500">Location</i></li>
+                  </ul>
             </div>
       </div>
-
 
       <!-- Hero Section -->
 
-      <div id="hero" class="flex bg-[url('img/home-bg.jpg')] shadow-2xl flex-wrap bg-pink-100 justify-center gap-40 items-center">
-            <div class="text-center  md:text-left">
-                <h1 class="text-6xl text-white md:text-6xl shadow-2xl mb-7 font-semibold">Select The Best <br class="mb-2"> Quality Breads</span></h1>
-                <button class="mt-4 font-semibold rounded-xl text-black shadow-2xl text-lg md:text-lg p-2.5 text-center cursor-pointer bg-orange-700 cursor-pointer w-36 md:w-36 hover:w-40 shadow-2xl hover:bg-orange-500">Select Breads</button>
-
+      <div id="hero" class="flex bg-[url('img/home-bg.jpg')] shadow-2xl flex-wrap bg-pink-100 justify-center gap-8 md:gap-40 items-center px-4 py-8 md:py-16">
+            <div class="text-center md:text-left w-full md:w-auto">
+                <h1 class="text-4xl md:text-6xl text-white shadow-2xl mb-7 font-semibold">Select The Best <br class="mb-2"> Quality Breads</h1>
+                <button class="mt-4 font-semibold rounded-xl transform transition duration-500 hover:scale-105 text-black shadow-2xl text-lg p-2.5 text-center cursor-pointer bg-orange-700 w-36 hover:w-40 hover:bg-orange-500">Select Breads</button>
             </div>
-            <div class="mt-6 mb-8 md:mt-10">
-                <img class="w-full max-w-xs md:max-w-[500px] transform transition duration-300 hover:scale-105" src="img/home-bread.png" alt="">
-            </div>
-      </div>
-
-
-       <!-- about Section -->
-
-      <div id="about" class="flex flex-wrap mt-6 mx-14 w-11/12 justify-center md:justify-around items-center p-3 md:p-20">
-            <div class="md:mt-0">
-                <img class="w-full transform transition duration-300 hover:scale-105 max-w-xs md:max-w-[360px]" src="img/about-bread.png" alt="">
-            </div>
-
-            <div class="text-center md:text-left">
-                <h1 class="text-3xl md:text-5xl  mt-4 font-semibold">About Us</h1>
-                <p class="mt-8 mb-7 text-[16px] w-[450px] ">We prepare all types of bread that are made at home, maintaining the tradition of using only the best ingredients made with local products whenever possible. We have an extensive line of freshly prepared bakeryand coffee products.</p>
-                <button class="mt-4 font-semibold rounded-xl text-lg md:text-lg p-2.5 text-center cursor-pointer text-black bg-orange-700 w-28 md:w-36 hover:w-32 shadow-2xl hover:bg-orange-500">Order now</button>
+            <div class="mt-6 mb-8 md:mt-10 w-full md:w-auto">
+                <img class="w-full max-w-[280px] md:max-w-[500px] mx-auto transform transition duration-300 hover:scale-105" src="img/home-bread.png" alt="">
             </div>
       </div>
 
+      <!-- about Section -->
 
-      
+      <div id="about" class="flex flex-wrap mt-6 px-4 md:mx-14 w-full md:w-11/12 justify-center md:justify-around items-center p-3 md:p-20">
+            <div class="md:mt-0 w-full md:w-auto">
+                <img class="w-full max-w-[280px] md:max-w-[360px] mx-auto transform transition duration-300 hover:scale-105" src="img/about-bread.png" alt="">
+            </div>
+            <div class="text-center md:text-left mt-8 md:mt-0">
+                <h1 class="text-3xl md:text-5xl font-semibold">About Us</h1>
+                <p class="mt-8 mb-7 text-[16px] max-w-[450px] mx-auto md:mx-0">We prepare all types of bread that are made at home, maintaining the tradition of using only the best ingredients made with local products whenever possible. We have an extensive line of freshly prepared bakery and coffee products.</p>
+                <button class="mt-4 font-semibold rounded-xl text-lg p-2.5 transform transition duration-700 hover:scale-105 text-center cursor-pointer text-black bg-orange-700 w-36 shadow-2xl hover:bg-orange-500">Order now</button>
+            </div>
+      </div>
+
       <!-- Bekary ordering part PART 01 -->
 
       <div id="oder01" class="mt-12">
             <h2 class="text-4xl text-center text-white font-bold">Customer <span class="text-orange-700">Favorites</span></h2>
       </div>
 
-
-       <div id="oder03" class="flex flex-row justify-center items-center gap-3">
-            <div class="flex h-[500px] w-[380px] hover:w-[390px] p-2 shadow-2xl flex-col justify-center gap-3 items-center">
+      <div id="oder03" class="flex flex-col md:flex-row flex-wrap justify-center items-center gap-6 md:gap-3 px-4">
+            <div class="flex h-[500px] w-[380px]  p-2 shadow-2xl flex-col justify-center gap-3 items-center">
                   <img class="shadow-2xl transform transition duration-300 hover:scale-105 rounded-full h-64" src="img/favorite-bread-1.png" alt="">
                   <h2 class="text-white text-2xl font-bold">Whole Grain Bread</h2>
                   <div class="text-2xl font-bold text-[rgb(231,111,81)] mb-2">$14.99</div>
-                  <button class="font-semibold rounded-xl text-lg md:text-lg p-2.5 text-center cursor-pointer text-black bg-orange-700 w-28 md:w-36 hover:w-32 shadow-2xl hover:bg-orange-500">Order now</button>
+                  <button class="mt-4 font-semibold transform transition duration-300 hover:scale-105 rounded-xl text-lg p-2.5 text-center cursor-pointer text-black bg-orange-700 w-36 hover:bg-orange-500  shadow-2xl">Order now</button>
             </div>
-            <div class="flex h-[500px] w-[380px] hover:w-[390px] p-2 shadow-2xl flex-col justify-center gap-3 items-center">
+            <div class="flex h-[500px] w-[380px]  p-2 shadow-2xl flex-col justify-center gap-3 items-center">
                   <img class="shadow-2xl transform transition duration-300 hover:scale-105 rounded-full h-64" src="img/favorite-bread-2.png" alt="">
                   <h2 class="text-white text-2xl font-bold">Rye Bread</h2>
                   <div class="text-2xl font-bold text-[rgb(231,111,81)] mb-2">$15.99</div>
-                  <button class="font-semibold rounded-xl text-lg md:text-lg p-2.5 text-center cursor-pointer text-black bg-orange-700 w-28 md:w-36 hover:w-32 shadow-2xl hover:bg-orange-500">Order now</button>
+                  <button class="mt-4 font-semibold rounded-xl text-lg transform transition duration-300 hover:scale-105 p-2.5 text-center cursor-pointer text-black bg-orange-700 w-36 hover:bg-orange-500 shadow-2xl">Order now</button>
             </div>
-            <div class="flex h-[500px] w-[380px] hover:w-[390px] p-2 shadow-2xl flex-col justify-center gap-3 items-center">
+            <div class="flex h-[500px] w-[380px] p-2 shadow-2xl flex-col justify-center gap-3 items-center">
                   <img class="shadow-2xl transform transition duration-300 hover:scale-105 rounded-full h-64" src="img/favorite-bread-3.png" alt="">
                   <h2 class="text-white text-2xl font-bold">Wheat Bread</h2>
                   <div class="text-2xl font-bold text-[rgb(231,111,81)] mb-2">$16.99</div>
-                  <button class="font-semibold rounded-xl text-lg md:text-lg p-2.5 text-center cursor-pointer text-black bg-orange-700 w-28 md:w-36 hover:w-32 shadow-2xl hover:bg-orange-500">Order now</button>
+                  <button class="mt-4 font-semibold rounded-xl text-lg p-2.5 transform transition duration-300 hover:scale-105 text-center cursor-pointer text-black bg-orange-700 w-36 hover:bg-orange-500 shadow-2xl">Order now</button>
             </div>
       </div>
 
-
       <!-- bekary ordering part PART 02 -->
 
-      <div id="oder02" class="flex flex-row justify-center items-center gap-3">
+      <div id="oder02" class="flex flex-col md:flex-row flex-wrap justify-center items-center gap-6 md:gap-3 px-4">
             <div class="flex h-[450px] w-[380px]  p-2 shadow-2xl flex-col justify-center gap-3 items-center">
                   <img class="shadow-2xl transform transition duration-300 hover:scale-105 rounded-full h-64" src="img/favorite-bread-4.png" alt="">
                   <h2 class="text-white text-2xl font-bold">Multigrain Bread</h2>
                   <div class="text-2xl font-bold text-[rgb(231,111,81)] mb-2">$12.99</div>
-                  <button class="font-semibold rounded-xl text-lg md:text-lg p-2.5 text-center cursor-pointer text-black bg-orange-700 w-28 md:w-36 hover:w-32 shadow-2xl hover:bg-orange-500">Order now</button>
+                  <button class="mt-4 font-semibold rounded-xl text-lg transform transition duration-300 hover:scale-105 p-2.5 text-center cursor-pointer text-black bg-orange-700 w-36 hover:bg-orange-500 shadow-2xl ">Order now</button>
             </div>
             <div class="flex h-[450px] w-[380px] p-2 shadow-2xl flex-col justify-center gap-3 items-center">
                   <img class="shadow-2xl transform transition duration-300 hover:scale-105 rounded-full h-64" src="img/favorite-bread-5.png" alt="">
                   <h2 class="text-white text-2xl font-bold">Sourdough Bread</h2>
                   <div class="text-2xl font-bold text-[rgb(231,111,81)] mb-2">$17.99</div>
-                  <button class="font-semibold rounded-xl text-lg md:text-lg p-2.5 text-center cursor-pointer text-black bg-orange-700 w-28 md:w-36 hover:w-32 shadow-2xl hover:bg-orange-500">Order now</button>
+                  <button class="mt-4 font-semibold rounded-xl transform transition duration-300 hover:scale-105 text-lg p-2.5 text-center cursor-pointer text-black bg-orange-700 w-36 hover:bg-orange-500 shadow-2xl">Order now</button>
             </div>
             <div class="flex h-[450px] w-[380px] p-2 shadow-2xl flex-col justify-center gap-3 items-center">
                   <img class="shadow-2xl transform transition duration-300 hover:scale-105 rounded-full h-64" src="img/favorite-bread-6.png" alt="">
                   <h2 class="text-white text-2xl font-bold">French Bread</h2>
                   <div class="text-2xl font-bold text-[rgb(231,111,81)] mb-2">$18.99</div>
-                  <button class="font-semibold rounded-xl text-lg md:text-lg p-2.5 text-center cursor-pointer text-black bg-orange-700 w-28 md:w-36 hover:w-32 shadow-2xl hover:bg-orange-500">Order now</button>
+                  <button class="mt-4 font-semibold rounded-xl text-lg transform transition duration-300 hover:scale-105 p-2.5 text-center cursor-pointer text-black bg-orange-700 w-36 hover:bg-orange-500 shadow-2xl">Order now</button>
             </div>
       </div>
-
 
       <!-- Visit Section added -->
 
-      <div id="Visit" class="bg-[url('img/visit-bg.jpg')] flex flex-col items-center text-center justify-center h-[480px] w-full bg-cover mt-12">
+      <div id="Visit" class="bg-[url('img/visit-bg.jpg')]  transform transition duration-700 hover:scale-105 flex flex-col items-center text-center justify-center h-[480px] w-full bg-cover mt-12">
             <div class="leading-5">
                   <h2 class="text-4xl text-center mb-6 text-white font-bold">Visit Us</span></h2>
                   <p class="mb-6">Discover the best bread, we look forward to your visit.</p>
-                  <button class="font-semibold rounded-xl text-lg transform transition duration-300 hover:scale-105 md:text-lg p-2.5 text-center cursor-pointer text-black bg-orange-700 w-32 md:w-36 hover:w-36 shadow-2xl hover:bg-orange-500">See Location</button>
+                  <button class="mt-4 font-semibold rounded-xl text-lg p-2.5 text-center cursor-pointer text-black bg-orange-700 w-36 shadow-2xl transform transition duration-300 hover:scale-105">Visit Us</button>
             </div>
       </div>
 
-
       <!-- Footer Section added -->
      
-      <div id="footer" class="mt-20 mb-5 p-10 flex flex-row justify-around text-sm md:text-[16px] h-auto bg-black text-white">
-         <div class="flex flex-col gap-4">
-            <h3 class="cursor-pointer text-[22px] mt-10 text-orange-500 transform transition duration-300 hover:scale-105 hover:text-orange-500">Bakery</h3>
+      <div id="footer" class="mt-20 mb-5 p-6 md:p-10 flex flex-col md:flex-row justify-around text-sm md:text-[16px] h-auto bg-black text-white">
+         <div class="flex flex-col gap-4 text-center md:text-left mb-8 md:mb-0">
+            <h3 class="cursor-pointer text-[22px] mt-6 md:mt-10 text-orange-500 transform transition duration-300 hover:scale-105 hover:text-orange-500">Bakery</h3>
             <p>We make the best bread <br> in the city.</p>
          </div>
-         <div class="flex flex-row gap-16">
-            <div class="mt-9">
+         <div class="flex flex-col md:flex-row gap-8 md:gap-16 text-center md:text-left">
+            <div class="mt-4 md:mt-9">
                <ul class="leading-8">
-                  <li class="font-semibold underline text-[22px] mb-5">Address</li>
+                  <li class="font-semibold underline text-[22px] mb-3 md:mb-5">Address</li>
                   <li class="text-[16px]">AV. The Sun #321 <br> Lima Peru</li>
                   <li class="text-[16px]">9AM - 11PM</li>
                </ul>
            </div>
-           <div class="mt-9">
+           <div class="mt-4 md:mt-9">
               <ul class="leading-8">
-                <li class="font-semibold underline text-[22px] mb-5">Contact Me</li>
+                <li class="font-semibold underline text-[22px] mb-3 md:mb-5">Contact Me</li>
                 <li class="text-[16px]">bakery@email.com</li>
-                <li class="text-[16px]"> +00 987 654 321</li>
+                <li class="text-[16px]">+00 987 654 321</li>
               </ul>
            </div>
-           <div class="mt-9">
+           <div class="mt-4 md:mt-9">
               <ul class="leading-8">
-                <li class="font-semibold underline text-[22px] mb-5">Follow Us</li>
+                <li class="font-semibold underline text-[22px] mb-3 md:mb-5">Follow Us</li>
                 <li class="text-[16px]">https://www.facebook.com</li>
                 <li class="text-[16px]">https://www.instagram.com</li>
                 <li class="text-[16px]">https://www.youtube.com</li>
